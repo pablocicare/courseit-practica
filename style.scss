@@ -1,0 +1,172 @@
+$pallete1: #000000;
+$pallete2: #ffffff;
+$pallete3: #a8a7a7;
+$pallete4: #3a3939;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    width: 50px;
+    height: 3px;
+    background-color: $pallete2;
+    margin: 20px 0;
+}
+
+.hero {
+    min-height: 160vh;
+    padding: 20px;
+    background-image: url(https://imagenes.diario16.com/wp-content/uploads/2018/03/Art%C3%ADculo-40.-Imagen.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #999;
+    background-blend-mode: multiply;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+
+        .logo {
+            font-size: 70px;
+            color: $pallete1;
+            font-weight: 600;
+        }
+
+        .nav {
+            font-size: 20px;
+            font-family: sans-serif;
+
+            .button {
+                padding: 10px;
+                margin-right: 10px;
+                text-decoration: none;
+                letter-spacing: 3px;
+                color: $pallete2;
+            }
+
+            .suscribe-button {
+                border: 2px solid $pallete2;
+            } 
+        }
+    }
+
+    .hero-title {
+        margin: 10% 0 8%;
+        padding-left: 15%;
+
+        .main-title {
+            font-size: 100px;
+            color: $pallete2;
+            font-weight: 400;
+            margin: 0 0 20px;
+        }
+
+        .human {
+            color: #07bff7;
+            font-size: 25px;
+            font-family: sans-serif;
+            letter-spacing: 4px;
+            font-weight: 700;
+            margin: 0;
+        }
+    }
+}
+
+.sections {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &.hero-section {
+        margin-top: 15%;
+        padding: 5%;
+    }
+
+    .titles {
+        font-size: 60px;
+        color: $pallete2;
+        margin-bottom: 20px;;
+    }
+
+    .subtitle {
+        color: $pallete3;
+        font-family: sans-serif;
+        margin: 0;
+        letter-spacing: 3px;
+    }
+
+    .description {
+        color: $pallete3;
+        text-align: center;
+        font-size: 19px;
+        line-height: 30px;
+    }
+}
+
+.last-articles {
+    background-color: $pallete4;
+    padding: 6% 4% 8%;
+
+    .articles-wrapper {
+        display: flex;
+        margin: 0 -20px;
+
+        .article {
+            height: 500px;
+            box-shadow: 0px 45px 44px -12px rgba(0, 0, 0, 1);
+            flex-grow: 1;
+            background-color: #444;
+            margin: 10px;
+            background-size: cover;
+            background-position: center;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+
+            &:nth-child(1) {
+                background-image: url(https://i.pinimg.com/originals/07/d9/66/07d966419ba34408046579a1a4b649ca.jpg);
+            }
+
+            &:nth-child(2) {
+                background-image: url(https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/article/5d8b373d5cafe8e8ce60036f/nivel-mar-ipcc_0.jpg);
+            }
+
+            &:nth-child(3) {
+                background-image: url(https://www.ecestaticos.com/imagestatic/clipping/a6b/7e0/a6b7e0f5b71a5fcff3f0f81b35c8f268/la-razon-desconocida-por-la-que-el-agua-del-mar-es-salada.jpg?mtime=1579565836);
+            }
+
+            .article-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                justify-content: center;
+                color: $pallete2;
+                font-family: sans-serif;
+                padding-bottom: 10px;
+
+                h4 {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+}

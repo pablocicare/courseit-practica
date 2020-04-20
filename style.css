@@ -20,6 +20,7 @@ body::-webkit-scrollbar {
 .nav {
   font-size: 16px;
   font-family: sans-serif;
+  width: auto;
 }
 .nav .button {
   padding: 10px;
@@ -30,6 +31,22 @@ body::-webkit-scrollbar {
 }
 .nav .suscribe-button {
   border: 2px solid #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    font-size: 14px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .nav .button {
+    padding: 0;
+    margin-right: 0;
+  }
+  .nav .suscribe-button {
+    border: none;
+  }
 }
 
 .hero {
@@ -52,6 +69,18 @@ body::-webkit-scrollbar {
   color: #ffffff;
   font-weight: 400;
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: auto;
+  }
+  .hero .header {
+    padding: 20px 0;
+    width: 100%;
+  }
+  .hero .logo {
+    display: none;
+  }
+}
 .hero .hero-title {
   margin: 10% 0 8%;
   padding-left: 15%;
@@ -69,6 +98,12 @@ body::-webkit-scrollbar {
   letter-spacing: 4px;
   font-weight: 700;
   margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .hero .hero-title {
+    margin-top: 22%;
+    padding: 0;
+  }
 }
 
 .sections {
@@ -101,6 +136,15 @@ body::-webkit-scrollbar {
   font-size: 19px;
   line-height: 30px;
 }
+@media screen and (max-width: 768px) {
+  .sections {
+    width: auto;
+    text-align: center;
+  }
+  .sections.hero-section {
+    margin-top: 70%;
+  }
+}
 
 .last-articles {
   background-color: #3a3939;
@@ -132,6 +176,7 @@ body::-webkit-scrollbar {
 }
 .last-articles .articles-wrapper .article:nth-child(3) {
   background-image: url(https://www.ecestaticos.com/imagestatic/clipping/a6b/7e0/a6b7e0f5b71a5fcff3f0f81b35c8f268/la-razon-desconocida-por-la-que-el-agua-del-mar-es-salada.jpg?mtime=1579565836);
+  text-align: center;
 }
 .last-articles .articles-wrapper .article .article-text {
   padding-bottom: 10px;
@@ -151,6 +196,16 @@ body::-webkit-scrollbar {
 }
 .last-articles .articles-wrapper .article .article-text .boton span {
   font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  .last-articles .articles-wrapper {
+    flex-direction: column;
+    margin: 0;
+  }
+  .last-articles .articles-wrapper .article {
+    width: auto;
+    height: 400px;
+  }
 }
 
 .newsletter {
@@ -184,6 +239,14 @@ body::-webkit-scrollbar {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+@media screen and (max-width: 768px) {
+  .newsletter .newsletter-form {
+    padding: 40px 15px;
+  }
+  .newsletter .newsletter-form .submit-button {
+    width: 100%;
+  }
+}
 
 .footer {
   background: #3a3939;
@@ -194,12 +257,24 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 .footer .footer-content .logo {
   font-size: 60px;
   color: #ffffff;
   font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+  .footer .footer-content {
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .footer .footer-content .logo {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

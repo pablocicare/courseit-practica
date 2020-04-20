@@ -6,12 +6,30 @@ body {
   margin: 0;
   padding: 0;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 .line {
   width: 50px;
   height: 3px;
   background-color: #ffffff;
   margin: 20px 0;
+}
+
+.nav {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.nav .button {
+  padding: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+.nav .suscribe-button {
+  border: 2px solid #ffffff;
 }
 
 .hero {
@@ -31,22 +49,8 @@ body {
 }
 .hero .header .logo {
   font-size: 70px;
-  color: #000000;
-  font-weight: 600;
-}
-.hero .header .nav {
-  font-size: 20px;
-  font-family: sans-serif;
-}
-.hero .header .nav .button {
-  padding: 10px;
-  margin-right: 10px;
-  text-decoration: none;
-  letter-spacing: 3px;
   color: #ffffff;
-}
-.hero .header .nav .suscribe-button {
-  border: 2px solid #ffffff;
+  font-weight: 400;
 }
 .hero .hero-title {
   margin: 10% 0 8%;
@@ -68,7 +72,7 @@ body {
 }
 
 .sections {
-  width: 40%;
+  width: 50%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -83,6 +87,7 @@ body {
   font-size: 60px;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 .sections .subtitle {
   color: #a8a7a7;
@@ -100,6 +105,7 @@ body {
 .last-articles {
   background-color: #3a3939;
   padding: 6% 4% 8%;
+  box-shadow: inset 0px 0px 57px 2px rgba(0, 0, 0, 0.44);
 }
 .last-articles .articles-wrapper {
   display: flex;
@@ -109,7 +115,6 @@ body {
   height: 500px;
   box-shadow: 0px 45px 44px -12px black;
   flex-grow: 1;
-  background-color: #444;
   margin: 10px;
   background-size: cover;
   background-position: center;
@@ -129,20 +134,72 @@ body {
   background-image: url(https://www.ecestaticos.com/imagestatic/clipping/a6b/7e0/a6b7e0f5b71a5fcff3f0f81b35c8f268/la-razon-desconocida-por-la-que-el-agua-del-mar-es-salada.jpg?mtime=1579565836);
 }
 .last-articles .articles-wrapper .article .article-text {
+  padding-bottom: 10px;
+}
+.last-articles .articles-wrapper .article .article-text .boton {
+  color: #ffffff;
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  font-family: sans-serif;
-  padding-bottom: 10px;
+  text-decoration: none;
 }
-.last-articles .articles-wrapper .article .article-text h4 {
+.last-articles .articles-wrapper .article .article-text .boton h4 {
   font-size: 30px;
   margin-bottom: 10px;
 }
-.last-articles .articles-wrapper .article .article-text span {
+.last-articles .articles-wrapper .article .article-text .boton span {
   font-size: 25px;
+}
+
+.newsletter {
+  background-color: #272727;
+  padding: 60px 0 40px;
+  box-shadow: inset 0px 0px 57px 2px rgba(0, 0, 0, 0.44);
+}
+.newsletter .newsletter-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.newsletter .newsletter-form .email-input {
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px;
+  margin-bottom: 2em;
+  background-color: #333;
+  border: 0;
+  color: #FFF;
+  font-size: 16px;
+}
+.newsletter .newsletter-form .submit-button {
+  background-color: transparent;
+  border: 2px solid #CCC;
+  color: #CCC;
+  padding: 10px 30px;
+  font-size: 1em;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.footer {
+  background: #3a3939;
+  box-shadow: inset 0px 0px 57px 2px rgba(0, 0, 0, 0.44);
+  padding: 50px 20px;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.footer .footer-content .logo {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
